@@ -1,0 +1,22 @@
+.intro{
+    display: flex;
+    height: 90vh;
+}
+.typing{
+    position: relative;
+    margin-left: 10px;
+}
+.typing::after{
+    content: '|';
+    position: absolute;
+    animation: blink 0.5s infinite ease;
+}
+
+@keyframes blink{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
